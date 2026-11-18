@@ -17,32 +17,49 @@ Due: November 18, 2026
 - [x] Create the SnowTrack repository.
 - [x] Connect the team to the repository.
 - [x] Update and commit README.md.
-- [ ] Research an existing Python image-viewing program.
-- [ ] Read and attempt to run the example code.
-- [ ] Document code evaluation findings.
+- [x] Research an existing Python image-viewing program.
+- [x] Read and attempt to run the example code.
+- [x] Document code evaluation findings.
 - [ ] Complete Sprint 1 Review and Log.
 
 ## Existing Python Code Evaluation
 
-### Code to Evaluate
+### Code Evaluated
 
-A Python image-viewing example using Tkinter and Pillow.
+Tkinter image viewer using the Pillow library.
+
+Source:
+https://pillowpython.com/guides/show-image/
+
+Example file: tk_viewer.py
 
 ### Purpose
 
-Determine whether existing Python code can be adapted to display photographs collected from remote snow monitoring cameras.
+Evaluate existing Python code that opens and displays photographs in a graphical window. This functionality could be used in SnowTrack to display images collected from remote snow-monitoring cameras.
 
 ### Evaluation Tasks
 
-- [ ] Locate an existing Python image-viewing example.
-- [ ] Review the source code.
-- [ ] Attempt to run the program in Visual Studio Code.
-- [ ] Identify useful functions for SnowTrack.
-- [ ] Record results and any problems encountered.
+- [x] Locate an existing Python image-viewing example.
+- [x] Read and review the source code.
+- [x] Attempt to run the program in Visual Studio Code.
+- [x] Identify useful functions for SnowTrack.
+- [x] Record results and problems encountered.
 
 ### Evaluation Results
 
-Not yet completed. Findings will be added after reviewing and testing an existing Python code example.
+I reviewed an existing Python example that uses Tkinter and Pillow to display a photograph.
+
+The program uses Image.open() to load a photograph, thumbnail() to resize it, and ImageTk.PhotoImage() to display it in a Tkinter window.
+
+My first attempt to run the program produced a ModuleNotFoundError because the Pillow library was not installed.
+
+I installed Pillow 13.0.0 using pip and ran the program again.
+
+The second attempt was successful. A Tkinter window opened and displayed a photograph from a snow-monitoring camera showing two different types of staff gauges.
+
+This example could be useful for developing SnowTrack's image-viewing functionality. However, it currently displays only one photograph and does not provide controls for browsing images or recording measurements.
+
+I plan to use this example as a starting point and expand its functionality during Sprint 2.
 
 ## Sprint 2 - Application Development
 Due: November 30, 2026
@@ -78,4 +95,8 @@ Due: December 14, 2026
 
 ## Project Status
 
-Sprint 1 is in progress. GitHub setup and initial project documentation have been completed. Existing code evaluation is the next task.
+Sprint 1 setup and research are complete.
+
+The SnowTrack GitHub team and repository have been created within the KSU-IS organization. The README.md has been updated and committed, and an existing Tkinter/Pillow image-viewing example has been reviewed and successfully tested using a snow-monitoring photograph.
+
+The next step is to commit these evaluation findings to GitHub and complete the Sprint 1 Review and Log in D2L.
